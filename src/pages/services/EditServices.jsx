@@ -116,7 +116,6 @@ export default function EditServices(props) {
           <Formik
             initialValues={{
               enTitle: data.title.en,
-              // enPoints: [...data.points.en],
               enPoints: data.points.en,
             }}
             enableReinitialize

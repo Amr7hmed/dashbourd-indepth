@@ -27,22 +27,12 @@ export default function CreateCard() {
     const formDataa = new FormData();
     // Update the formData object
     formDataa.append("title[en]", values.enTitle);
+    formDataa.append("group", "about");
     formDataa.append("active", 1);
     for (let index = 0; index < values.pointsEN.length; index++) {
       formDataa.append("points[en][]", values.pointsEN[index]);
     }
 
-    // {
-    //   title: {
-    //     en: values.enTitle,
-    //     ar: "",
-    //   },
-    //   points: {
-    //     en: [...values.pointsEN],
-    //     ar: [],
-    //   },
-    //   active: 1,
-    // },
     const options = {
       method: "POST",
       url: `${process.env.REACT_APP_API_BASEURL}/api/admin/cards`,
@@ -74,7 +64,6 @@ export default function CreateCard() {
         <h1 className="text-center"> Create Card </h1>
         <Formik
           initialValues={{
-            arTitle: "",
             enTitle: "",
             pointsEN: [""],
           }}

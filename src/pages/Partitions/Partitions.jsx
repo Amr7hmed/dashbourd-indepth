@@ -34,12 +34,6 @@ export default function Partitions() {
       key: "id",
     },
     {
-      title: "Key",
-      dataIndex: "key",
-      key: "key",
-    },
-
-    {
       title: "sub_title",
       dataIndex: "sub_title",
       key: "sub_title",
@@ -61,6 +55,7 @@ export default function Partitions() {
       title: "Photo",
       dataIndex: "photo",
       key: "photo",
+      width: "400px",
       render: (t, r) => <img src={`${r.photo}`} alt="img" />,
     },
 
