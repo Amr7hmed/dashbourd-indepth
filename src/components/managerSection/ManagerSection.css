@@ -1,0 +1,14 @@
+.managerUl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.managerUl li:nth-child(odd) {
+  /* background-color: #ededed; */
+  background-color: rgba(31, 133, 45, 0.1);
+}
+
+.managerUl li:nth-child(odd) .row {
+  flex-direction: row-reverse;
+}

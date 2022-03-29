@@ -1,0 +1,32 @@
+.menu-links {
+  padding-top: 30px;
+  background-color: $black;
+  min-height: calc(100vh - 75px);
+  top: 0;
+  min-width: 250px;
+  position: relative;
+  ul {
+    position: sticky;
+    top: 10px;
+  }
+  .nav-link {
+    display: block;
+    color: $white;
+    min-width: max-content;
+    width: 100%;
+    &.active {
+      background-color: $white;
+      color: $black;
+      .fa {
+        background-color: $black;
+        color: $white;
+        padding: 5px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+      }
+    }
+  }
+}

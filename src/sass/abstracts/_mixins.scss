@@ -1,0 +1,15 @@
+// Media Screen
+@mixin media($minmax, $width) {
+  @media (#{$minmax}-width: $width) {
+    @content;
+  }
+}
+
+/*
+  - use it 
+  first arg => [min - max]
+  scend arg => [width screen]
+  @include media(min, $tab-screen) {
+      width: 10px;
+  }
+*/

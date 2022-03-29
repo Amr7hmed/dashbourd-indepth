@@ -1,0 +1,26 @@
+.menu-links,
+main {
+  padding-top: 30px;
+}
+.nft-store-inner {
+  position: relative;
+}
+// Section Title Style
+.section-title {
+  .title-color {
+    color: $white;
+  }
+  .section-title__para {
+    font-size: 14px;
+    margin: 0px 10px;
+    @include media(min, $tab-screen) {
+      width: 60%;
+      margin: 20px auto;
+    }
+  }
+}
+
+// Header Page
+.page-header {
+  max-height: 500px;
+}
