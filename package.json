@@ -1,6 +1,6 @@
 {
-  "name": "dashboard",
-  "homepage": "https://dashboard.greendiamondco.com/",
+  "name": "dashboard-indepth",
+  "homepage": "https://dashboard.indepth-co.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

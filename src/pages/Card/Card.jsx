@@ -41,11 +41,11 @@ export default function Card() {
               </Link>
             </div>
           </div>
-          <div className="row border-top py-3 ">
-            <div className="col-md-3">
+          <div className="row py-3 position-sticky top-0 shadow-sm bg-light">
+            <div className="col-md-3 border-end border-2">
               <h3>Title Card</h3>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 border-end border-2">
               <h3>Points Card</h3>
             </div>
             <div className="col-md-3">

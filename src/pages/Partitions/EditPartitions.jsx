@@ -78,9 +78,9 @@ export default function EditPartitions(props) {
     // Update the formData object
     formDataa.append("photo", selectedFile);
     formDataa.append("title[en]", values.enTitle);
-    formDataa.append("sub_title[en]", values.enTitle);
-    formDataa.append("description[en]", values.enTitle);
-    formDataa.append("short_description[en]", values.enTitle);
+    formDataa.append("sub_title[en]", values.enSubTitle);
+    formDataa.append("description[en]", values.enDescription);
+    formDataa.append("short_description[en]", values.enShortDescription);
     formDataa.append("active", 1);
     const options = {
       method: "post",
@@ -111,7 +111,7 @@ export default function EditPartitions(props) {
   return (
     <main className="w-100">
       <Container>
-        <h1 className="text-center">Edit Services </h1>
+        <h1>Edit Partitions </h1>
         {dataLoading ? (
           <Spinner />
         ) : (

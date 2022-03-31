@@ -132,6 +132,13 @@ export default function CreateContent() {
         >
           about
         </span>
+
+        <span
+          className="btn btn-dark text-capitalize"
+          onClick={() => setGroup("home")}
+        >
+          home
+        </span>
       </div>
 
       {loading ? (
