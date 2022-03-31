@@ -1,6 +1,6 @@
 {
   "name": "dashboard-indepth",
-  "homepage": "https://dashboard.indepth-co.com/",
+  "homepage": "https://indepth-co.com/dashboard/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
