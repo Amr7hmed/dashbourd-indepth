@@ -7,6 +7,8 @@ import { RemoveUser } from "../../redux/User";
 import { message } from "antd";
 import axios from "axios";
 
+import LogoImg from "./logo.png";
+
 export default function Header() {
   let location = useLocation();
   let dispatch = useDispatch();
@@ -62,7 +64,7 @@ export default function Header() {
               <div className="d-flex justify-content-between align-items-center w-100">
                 <div>
                   <img
-                    src="./logo.png"
+                    src={LogoImg}
                     alt="logo"
                     className="img-fluid header__logo"
                   />
